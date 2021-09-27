@@ -1,0 +1,18 @@
+server:
+  port: 4040
+#spring:
+#  application:
+#    name: user-managment-service
+spring:
+  application:
+    name: config-client
+com:
+  user:
+    errors:
+      exception-messages:
+        UserNotFoundException:
+          code: 1001
+          status-code: 404
+          message:
+            AR: المستخدم غير موجود
+            EN: User not found!
