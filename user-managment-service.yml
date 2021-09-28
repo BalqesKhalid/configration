@@ -1,1 +1,18 @@
-com.training.tax = 22
+server:
+  port: 4040
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+com:
+  user:
+    errors:
+      exception-messages:
+        UserNotFoundException:
+          code: 1001
+          status-code: 404
+          message:
+            AR: المستخدم غير موجود
+            EN: User not found!
